@@ -4,5 +4,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tsconfigPaths(), react()],
-  test: { environment: "jsdom" },
+  test: {
+    environment: "jsdom",
+    include: ["src/**/*.spec.ts", "src/**/*.spec.tsx"],
+    coverage: {
+      include: ["src/**/*.ts", "src/**/*.tsx"]
+    }
+  },
 });
