@@ -18,7 +18,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@oslojs/crypto": "^1.0.1",
+    "@oslojs/encoding": "^1.1.0",
+    "@pilcrowjs/object-parser": "^0.0.4",
     "@prisma/client": "^6.5.0",
+    "arctic": "^3.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.479.0",
