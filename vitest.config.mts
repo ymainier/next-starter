@@ -8,7 +8,8 @@ export default defineConfig({
     environment: "jsdom",
     include: ["src/**/*.spec.ts", "src/**/*.spec.tsx"],
     coverage: {
-      include: ["src/**/*.ts", "src/**/*.tsx"]
-    }
+      include: ["src/**/*.ts", "src/**/*.tsx"],
+    },
+    setupFiles: ["./vitest-setup.mts"],
   },
 });

@@ -1,10 +1,10 @@
+import { checkGetRateLimit } from "@/lib/rate-limit";
 import { getCurrentSession } from "@/lib/session";
 import { redirect } from "next/navigation";
 import { LogoutButton } from "./components";
-import { checkGetRateLimit } from "@/lib/rate-limit";
 
 export default async function Page() {
-  if (!checkGetRateLimit()) {
+  if (!(await checkGetRateLimit())) {
     return "Too many requests";
   }
   const { user } = await getCurrentSession();
