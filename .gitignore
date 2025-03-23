@@ -74,3 +74,4 @@ node_modules/
 # Prisma
 .env
 prisma/dev.db*
+prisma/test.db*

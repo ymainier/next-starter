@@ -71,8 +71,7 @@ export default defineConfig({
   ],
 
   webServer: {
-    // npm run start does not work with output: "standalone"
-    command: "node .next/standalone/server.js",
+    command: "npm run e2e:server",
     url: "http://127.0.0.1:3000",
     reuseExistingServer: !process.env.CI,
   },
